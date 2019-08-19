@@ -48,21 +48,7 @@
                                 <th>&nbsp;</th>
                             </thead>
                             <tbody>
-                                @foreach ($tasks as $task)
-                                    <tr>
-                                        <td class="table-text"><div>{{ $task->task }}</div></td>
-
-                                        <!-- Task Delete Button -->
-                                        <td>
-                                            <form action="" method="POST">
-                                                {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger">
-                                                    <i class="fa fa-btn fa-trash"></i>Delete
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                <!-- ここに追加-->
                             </tbody>
                         </table>
                     </div>
@@ -70,4 +56,5 @@
             @endif
         </div>
     </div>
+
 @endsection
