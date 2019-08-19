@@ -50,11 +50,11 @@
                             <tbody>
                                 @foreach ($tasks as $task)
                                     <tr>
-                                        <td class="table-text"><div>{{ $task->content }}</div></td>
+                                        <td class="table-text"><div>{{ $task->task }}</div></td>
 
                                         <!-- Task Delete Button -->
                                         <td>
-                                            <form action="{{ url('task/delete/'.$task->id) }}" method="POST">
+                                            <form action="" method="POST">
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
