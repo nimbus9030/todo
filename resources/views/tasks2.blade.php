@@ -10,7 +10,7 @@
 
                 <div class="panel-body">
                     <!-- New Task Form -->
-                    <form action="{{ url('tasks')}}" method="POST" class="form-horizontal">
+                    <form action="{{ url('add')}}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
 
                         <!-- Task Name -->
@@ -18,7 +18,7 @@
                             <label for="task-name" class="col-sm-3 control-label">Task</label>
 
                             <div class="col-sm-6">
-                                <input type="text" name="content" id="task-name" class="form-control" value="{{ old('task') }}">
+                                <input type="text" name="content" id="task-name" class="form-control" value="{{ old('content') }}">
                             </div>
                         </div>
 
