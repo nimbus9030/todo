@@ -10,7 +10,7 @@
 
                 <div class="panel-body">
                     <!-- New Task Form -->
-                    <form action="{{ url('task')}}" method="POST" class="form-horizontal">
+                    <form action="{{ url('tasks')}}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
 
                         <!-- Task Name -->
